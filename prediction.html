@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentPredict - Prediction</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="dashboard-container">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="small-heading">
+                StudentPredict
+            </p>
+
+            <h1>
+                Performance Prediction
+            </h1>
+
+        </div>
+
+        <div class="profile-icon">
+            🔮
+        </div>
+
+    </header>
+
+
+
+    <!-- INTRO -->
+
+    <section class="prediction-intro">
+
+        <div class="prediction-intro-icon">
+            🎯
+        </div>
+
+        <div>
+
+            <h2>
+                Predict Your Performance
+            </h2>
+
+            <p>
+                Enter your academic details and study habits
+                to generate your performance prediction.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- HELP BOX -->
+
+    <div class="input-help-box">
+
+        <span>
+            💡
+        </span>
+
+        <div>
+
+            <strong>
+                How to fill this form
+            </strong>
+
+            <p>
+                Enter your actual academic information.
+                CGPA and SGPA should be entered out of 10.
+                Attendance should be entered as a percentage.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FORM -->
+
+    <form
+        id="predictionForm"
+        class="prediction-form"
+    >
+
+
+        <!-- =========================================
+             STUDENT DETAILS
+        ========================================== -->
+
+        <section class="form-section">
+
+            <div class="form-section-title">
+
+                <span>
+                    👤
+                </span>
+
+                <div>
+
+                    <h2>
+                        Student Details
+                    </h2>
+
+                    <p>
+                        Basic academic information
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <label for="studentName">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="studentName"
+                placeholder="Example: Vasavi Thanuja"
+                required
+            >
+
+            <small class="field-help">
+                Enter your full name.
+            </small>
+
+
+
+            <label for="rollNumber">
+                Roll Number
+            </label>
+
+            <input
+                type="text"
+                id="rollNumber"
+                placeholder="Example: 23IT01"
+                required
+            >
+
+            <small class="field-help">
+                Enter your college roll number.
+            </small>
+
+
+
+            <label for="department">
+                Department
+            </label>
+
+            <select
+                id="department"
+                required
+            >
+
+                <option value="">
+                    Select your department
+                </option>
+
+                <option value="Information Technology">
+                    Information Technology
+                </option>
+
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+
+                <option value="Electronics and Communication">
+                    Electronics and Communication
+                </option>
+
+                <option value="Electrical and Electronics">
+                    Electrical and Electronics
+                </option>
+
+                <option value="Mechanical">
+                    Mechanical
+                </option>
+
+                <option value="Civil">
+                    Civil
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+            <small class="field-help">
+                Select your department.
+            </small>
+
+
+
+            <label for="year">
+                Academic Year
+            </label>
+
+            <select
+                id="year"
+                required
+            >
+
+                <option value="">
+                    Select your year
+                </option>
+
+                <option value="1st">
+                    1st Year
+                </option>
+
+                <option value="2nd">
+                    2nd Year
+                </option>
+
+                <option value="3rd">
+                    3rd Year
+                </option>
+
+                <option value="4th">
+                    4th Year
+                </option>
+
+            </select>
+
+            <small class="field-help">
+                Select your current academic year.
+            </small>
+
+
+
+            <label for="semester">
+                Current Semester
+            </label>
+
+            <select
+                id="semester"
+                required
+            >
+
+                <option value="">
+                    Select your semester
+                </option>
+
+                <option value="1">
+                    Semester 1
+                </option>
+
+                <option value="2">
+                    Semester 2
+                </option>
+
+                <option value="3">
+                    Semester 3
+                </option>
+
+                <option value="4">
+                    Semester 4
+                </option>
+
+                <option value="5">
+                    Semester 5
+                </option>
+
+                <option value="6">
+                    Semester 6
+                </option>
+
+                <option value="7">
+                    Semester 7
+                </option>
+
+                <option value="8">
+                    Semester 8
+                </option>
+
+            </select>
+
+            <small class="field-help">
+                Select the semester you are currently studying.
+            </small>
+
+        </section>
+
+
+
+        <!-- =========================================
+             ACADEMIC PERFORMANCE
+        ========================================== -->
+
+        <section class="form-section">
+
+            <div class="form-section-title">
+
+                <span>
+                    📚
+                </span>
+
+                <div>
+
+                    <h2>
+                        Academic Performance
+                    </h2>
+
+                    <p>
+                        Enter your actual academic records
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- CURRENT CGPA -->
+
+            <label for="currentCGPA">
+                Current CGPA
+            </label>
+
+            <input
+                type="number"
+                id="currentCGPA"
+                placeholder="Example: 8.32"
+                min="0"
+                max="10"
+                step="0.01"
+                required
+            >
+
+            <small class="field-help">
+                Enter your current CGPA out of 10.
+                Example: 8.32.
+            </small>
+
+
+
+            <!-- PREVIOUS SGPA -->
+
+            <label for="previousSGPA">
+                Previous Semester SGPA
+            </label>
+
+            <input
+                type="number"
+                id="previousSGPA"
+                placeholder="Example: 8.10"
+                min="0"
+                max="10"
+                step="0.01"
+                required
+            >
+
+            <small class="field-help">
+                Enter your SGPA from the previous semester,
+                out of 10. Example: 8.10.
+            </small>
+
+
+
+            <!-- ATTENDANCE -->
+
+            <label for="attendance">
+                Attendance (%)
+            </label>
+
+            <input
+                type="number"
+                id="attendance"
+                placeholder="Example: 83"
+                min="0"
+                max="100"
+                step="0.1"
+                required
+            >
+
+            <small class="field-help">
+                Enter your average attendance percentage.
+                Example: 83%.
+            </small>
+
+
+
+            <!-- BACKLOGS -->
+
+            <label for="backlogs">
+                Number of Backlogs
+            </label>
+
+            <input
+                type="number"
+                id="backlogs"
+                placeholder="Example: 0"
+                min="0"
+                step="1"
+                required
+            >
+
+            <small class="field-help">
+                Enter the number of subjects you currently
+                have as backlogs. If none, enter 0.
+            </small>
+
+        </section>
+
+
+
+        <!-- =========================================
+             STUDY HABITS
+        ========================================== -->
+
+        <section class="form-section">
+
+            <div class="form-section-title">
+
+                <span>
+                    📖
+                </span>
+
+                <div>
+
+                    <h2>
+                        Study Habits
+                    </h2>
+
+                    <p>
+                        Tell us about your regular routine
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- STUDY HOURS -->
+
+            <label for="studyHours">
+                Study Hours per Day
+            </label>
+
+            <input
+                type="number"
+                id="studyHours"
+                placeholder="Example: 3"
+                min="0"
+                max="24"
+                step="0.5"
+                required
+            >
+
+            <small class="field-help">
+                Enter approximately how many hours you
+                study on a normal day. Example: 3 hours.
+            </small>
+
+
+
+            <!-- STUDY SESSIONS -->
+
+            <label for="studySessions">
+                Study Sessions per Week
+            </label>
+
+            <input
+                type="number"
+                id="studySessions"
+                placeholder="Example: 5"
+                min="0"
+                max="50"
+                step="1"
+                required
+            >
+
+            <small class="field-help">
+                Enter the number of separate study sessions
+                you usually complete in one week. Example: 5.
+            </small>
+
+
+
+            <!-- SLEEP -->
+
+            <label for="sleepHours">
+                Sleep Hours per Day
+            </label>
+
+            <input
+                type="number"
+                id="sleepHours"
+                placeholder="Example: 7"
+                min="0"
+                max="24"
+                step="0.5"
+                required
+            >
+
+            <small class="field-help">
+                Enter your average sleep duration per day.
+                Example: 7 hours.
+            </small>
+
+        </section>
+
+
+
+        <!-- ERROR -->
+
+        <p
+            id="predictionError"
+            class="form-error"
+        ></p>
+
+
+
+        <!-- BUTTON -->
+
+        <button
+            type="submit"
+            class="predict-button"
+        >
+
+            🔮 Predict My Performance
+
+        </button>
+
+
+
+        <p class="prediction-note">
+
+            This prototype uses your academic records
+            and study habits to generate a performance estimate.
+
+        </p>
+
+    </form>
+
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <span>🏠</span>
+
+            <small>Home</small>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="nav-item active"
+        >
+
+            <span>🔮</span>
+
+            <small>Predict</small>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="nav-item"
+        >
+
+            <span>📊</span>
+
+            <small>Analytics</small>
+
+        </a>
+
+
+        <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <span>👤</span>
+
+            <small>Profile</small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

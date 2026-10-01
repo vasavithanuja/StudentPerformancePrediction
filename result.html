@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentPredict - Result</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="dashboard-container">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="small-heading">
+                StudentPredict
+            </p>
+
+            <h1>
+                Prediction Result
+            </h1>
+
+        </div>
+
+        <div class="profile-icon">
+            📋
+        </div>
+
+    </header>
+
+
+
+    <!-- RESULT HERO -->
+
+    <section class="result-hero">
+
+        <p class="result-label">
+            Predicted Performance Score
+        </p>
+
+
+        <div class="result-score">
+
+            <span id="resultScore">
+                --
+            </span>
+
+            <small>
+                / 100
+            </small>
+
+        </div>
+
+
+        <div
+            id="performanceBadge"
+            class="performance-badge"
+        >
+            --
+        </div>
+
+
+        <p class="result-student">
+
+            Student:
+
+            <strong id="resultName">
+                --
+            </strong>
+
+        </p>
+
+    </section>
+
+
+
+    <!-- STUDENT DETAILS -->
+
+    <section class="result-section">
+
+        <div class="result-section-title">
+
+            <span>
+                👤
+            </span>
+
+            <div>
+
+                <h2>
+                    Student Details
+                </h2>
+
+                <p>
+                    Information used for prediction
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="result-info-grid">
+
+
+            <div class="result-info-item">
+
+                <span>
+                    Roll Number
+                </span>
+
+                <strong id="resultRoll">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="result-info-item">
+
+                <span>
+                    Department
+                </span>
+
+                <strong id="resultDepartment">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="result-info-item">
+
+                <span>
+                    Academic Year
+                </span>
+
+                <strong id="resultYear">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="result-info-item">
+
+                <span>
+                    Semester
+                </span>
+
+                <strong id="resultSemester">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACADEMIC RISK -->
+
+    <section class="risk-card">
+
+        <div class="risk-icon">
+            🛡️
+        </div>
+
+        <div>
+
+            <p>
+                Academic Risk
+            </p>
+
+            <h2 id="resultRisk">
+                --
+            </h2>
+
+            <span id="riskDescription">
+                --
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACADEMIC FACTORS -->
+
+    <section class="result-section">
+
+        <div class="result-section-title">
+
+            <span>
+                📊
+            </span>
+
+            <div>
+
+                <h2>
+                    Academic Factors
+                </h2>
+
+                <p>
+                    Your current academic indicators
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CGPA -->
+
+        <div class="factor-item">
+
+            <div class="factor-header">
+
+                <span>
+                    Current CGPA
+                </span>
+
+                <strong id="factorCGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="progress-background">
+
+                <div
+                    id="cgpaProgress"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SGPA -->
+
+        <div class="factor-item">
+
+            <div class="factor-header">
+
+                <span>
+                    Previous Semester SGPA
+                </span>
+
+                <strong id="factorSGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="progress-background">
+
+                <div
+                    id="sgpaProgress"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATTENDANCE -->
+
+        <div class="factor-item">
+
+            <div class="factor-header">
+
+                <span>
+                    Attendance
+                </span>
+
+                <strong id="factorAttendance">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="progress-background">
+
+                <div
+                    id="attendanceProgress"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BACKLOGS -->
+
+        <div class="backlog-result-card">
+
+            <div class="backlog-result-icon">
+                📚
+            </div>
+
+            <div>
+
+                <span>
+                    Current Backlogs
+                </span>
+
+                <strong id="resultBacklogs">
+                    --
+                </strong>
+
+                <small>
+                    subjects
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY HABITS -->
+
+    <section class="result-section">
+
+        <div class="result-section-title">
+
+            <span>
+                📖
+            </span>
+
+            <div>
+
+                <h2>
+                    Study Habits
+                </h2>
+
+                <p>
+                    Your current study routine
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="study-result-grid">
+
+
+            <div>
+
+                <span>
+                    ⏰
+                </span>
+
+                <p>
+                    Study Hours
+                </p>
+
+                <strong id="resultStudyHours">
+                    --
+                </strong>
+
+                <small>
+                    hours/day
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    📚
+                </span>
+
+                <p>
+                    Study Sessions
+                </p>
+
+                <strong id="resultSessions">
+                    --
+                </strong>
+
+                <small>
+                    per week
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    😴
+                </span>
+
+                <p>
+                    Sleep
+                </p>
+
+                <strong id="resultSleep">
+                    --
+                </strong>
+
+                <small>
+                    hours/day
+                </small>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    🎓
+                </span>
+
+                <p>
+                    CGPA
+                </p>
+
+                <strong id="resultCGPA">
+                    --
+                </strong>
+
+                <small>
+                    out of 10
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- RECOMMENDATIONS -->
+
+    <section class="result-section">
+
+        <div class="result-section-title">
+
+            <span>
+                💡
+            </span>
+
+            <div>
+
+                <h2>
+                    Recommendations
+                </h2>
+
+                <p>
+                    Suggestions based on your inputs
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <ul
+            id="recommendationList"
+            class="recommendation-list"
+        ></ul>
+
+    </section>
+
+
+
+    <!-- ACTION BUTTONS -->
+
+    <section class="result-actions">
+
+        <a
+            href="prediction.html"
+            class="result-action primary"
+        >
+            🔄 New Prediction
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="result-action secondary"
+        >
+            📊 View Analytics
+        </a>
+
+
+        <a
+            href="history.html"
+            class="result-action secondary"
+        >
+            🕒 View History
+        </a>
+
+    </section>
+
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <span>
+                🏠
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="nav-item active"
+        >
+
+            <span>
+                🔮
+            </span>
+
+            <small>
+                Predict
+            </small>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="nav-item"
+        >
+
+            <span>
+                📊
+            </span>
+
+            <small>
+                Analytics
+            </small>
+
+        </a>
+
+
+        <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <small>
+                Profile
+            </small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

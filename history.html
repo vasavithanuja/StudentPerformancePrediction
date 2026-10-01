@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentPredict - History</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="small-heading">
+                StudentPredict
+            </p>
+
+            <h1>
+                Prediction History
+            </h1>
+
+        </div>
+
+        <div class="profile-icon">
+            🕒
+        </div>
+
+    </header>
+
+
+    <!-- INTRO -->
+    <section class="history-intro">
+
+        <div class="history-icon">
+            🕒
+        </div>
+
+        <div>
+
+            <h2>
+                Your Predictions
+            </h2>
+
+            <p>
+                View your previous performance predictions
+                and academic results.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SUMMARY -->
+    <section class="history-summary">
+
+        <div>
+
+            <span>
+                📊
+            </span>
+
+            <p>
+                Total Predictions
+            </p>
+
+            <strong id="totalPredictions">
+                0
+            </strong>
+
+        </div>
+
+
+        <div>
+
+            <span>
+                🎯
+            </span>
+
+            <p>
+                Latest Score
+            </p>
+
+            <strong id="latestHistoryScore">
+                --
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- HISTORY -->
+    <section class="history-section">
+
+        <div class="history-title-row">
+
+            <h2>
+                Recent Predictions
+            </h2>
+
+            <button
+                type="button"
+                id="clearHistoryButton"
+                class="clear-history-button"
+            >
+                Clear
+            </button>
+
+        </div>
+
+
+        <!-- Prediction cards will appear here -->
+        <div id="historyList"></div>
+
+
+        <!-- Empty history -->
+        <div
+            id="emptyHistory"
+            class="empty-history"
+        >
+
+            <div class="empty-history-icon">
+                📋
+            </div>
+
+            <h3>
+                No Predictions Yet
+            </h3>
+
+            <p>
+                Make your first performance prediction
+                to see it here.
+            </p>
+
+            <a href="prediction.html">
+                Make Prediction
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <span>
+                🏠
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="nav-item"
+        >
+
+            <span>
+                🔮
+            </span>
+
+            <small>
+                Predict
+            </small>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="nav-item"
+        >
+
+            <span>
+                📊
+            </span>
+
+            <small>
+                Analytics
+            </small>
+
+        </a>
+
+
+        <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <small>
+                Profile
+            </small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

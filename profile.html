@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentPredict - Profile</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+    <!-- HEADER -->
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="small-heading">
+                StudentPredict
+            </p>
+
+            <h1>
+                My Profile
+            </h1>
+
+        </div>
+
+        <div class="profile-icon">
+            👤
+        </div>
+
+    </header>
+
+
+    <!-- PROFILE MAIN CARD -->
+    <section class="profile-main-card">
+
+        <div class="large-profile-icon">
+            👤
+        </div>
+
+        <h2 id="profileName">
+            Student
+        </h2>
+
+        <p id="profileEmail">
+            student@email.com
+        </p>
+
+        <span class="profile-status">
+            ● Active Student
+        </span>
+
+    </section>
+
+
+    <!-- ACCOUNT INFORMATION -->
+    <section class="profile-section">
+
+        <h2>
+            Account Information
+        </h2>
+
+
+        <div class="profile-info-card">
+
+            <div class="profile-info-icon">
+                👤
+            </div>
+
+            <div>
+
+                <span>
+                    Full Name
+                </span>
+
+                <strong id="profileFullName">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-info-card">
+
+            <div class="profile-info-icon">
+                ✉️
+            </div>
+
+            <div>
+
+                <span>
+                    Email
+                </span>
+
+                <strong id="profileEmailDetails">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-info-card">
+
+            <div class="profile-info-icon">
+                🎓
+            </div>
+
+            <div>
+
+                <span>
+                    Department
+                </span>
+
+                <strong id="profileDepartment">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="profile-info-card">
+
+            <div class="profile-info-icon">
+                🏫
+            </div>
+
+            <div>
+
+                <span>
+                    Academic Year
+                </span>
+
+                <strong id="profileYear">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACADEMIC INFORMATION -->
+    <section class="profile-section">
+
+        <h2>
+            Academic Information
+        </h2>
+
+
+        <div class="profile-stat-grid">
+
+            <!-- CGPA -->
+            <div class="profile-stat-card">
+
+                <span>
+                    🎓
+                </span>
+
+                <p>
+                    Current CGPA
+                </p>
+
+                <strong id="profileCGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <!-- SGPA -->
+            <div class="profile-stat-card">
+
+                <span>
+                    📚
+                </span>
+
+                <p>
+                    Previous SGPA
+                </p>
+
+                <strong id="profileSGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <!-- Attendance -->
+            <div class="profile-stat-card">
+
+                <span>
+                    📅
+                </span>
+
+                <p>
+                    Attendance
+                </p>
+
+                <strong id="profileAttendance">
+                    --
+                </strong>
+
+            </div>
+
+
+            <!-- Backlogs -->
+            <div class="profile-stat-card">
+
+                <span>
+                    📖
+                </span>
+
+                <p>
+                    Backlogs
+                </p>
+
+                <strong id="profileBacklogs">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PREDICTION SUMMARY -->
+    <section class="profile-section">
+
+        <h2>
+            Prediction Summary
+        </h2>
+
+
+        <div class="profile-stat-grid">
+
+            <!-- Predictions -->
+            <div class="profile-stat-card">
+
+                <span>
+                    📊
+                </span>
+
+                <p>
+                    Predictions
+                </p>
+
+                <strong id="profilePredictions">
+                    0
+                </strong>
+
+            </div>
+
+
+            <!-- Latest Score -->
+            <div class="profile-stat-card">
+
+                <span>
+                    🎯
+                </span>
+
+                <p>
+                    Latest Score
+                </p>
+
+                <strong id="profileLatestScore">
+                    --
+                </strong>
+
+            </div>
+
+
+            <!-- Performance -->
+            <div class="profile-stat-card">
+
+                <span>
+                    ⭐
+                </span>
+
+                <p>
+                    Performance
+                </p>
+
+                <strong id="profilePerformance">
+                    --
+                </strong>
+
+            </div>
+
+
+            <!-- Risk -->
+            <div class="profile-stat-card">
+
+                <span>
+                    🛡️
+                </span>
+
+                <p>
+                    Risk
+                </p>
+
+                <strong id="profileRisk">
+                    --
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ACCOUNT ACTIONS -->
+    <section class="profile-section">
+
+        <h2>
+            Account Actions
+        </h2>
+
+
+        <a
+            href="history.html"
+            class="profile-action-card"
+        >
+
+            <span>
+                🕒
+            </span>
+
+            <div>
+
+                <strong>
+                    Prediction History
+                </strong>
+
+                <small>
+                    View your previous predictions
+                </small>
+
+            </div>
+
+            <b>
+                ›
+            </b>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="profile-action-card"
+        >
+
+            <span>
+                📈
+            </span>
+
+            <div>
+
+                <strong>
+                    View Analytics
+                </strong>
+
+                <small>
+                    Analyze your performance
+                </small>
+
+            </div>
+
+            <b>
+                ›
+            </b>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="profile-action-card"
+        >
+
+            <span>
+                🔮
+            </span>
+
+            <div>
+
+                <strong>
+                    New Prediction
+                </strong>
+
+                <small>
+                    Analyze your latest academic data
+                </small>
+
+            </div>
+
+            <b>
+                ›
+            </b>
+
+        </a>
+
+
+        <button
+            type="button"
+            id="logoutButton"
+            class="logout-button"
+        >
+            🚪 Logout
+        </button>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="profile-about">
+
+        <div>
+            🎓
+        </div>
+
+        <div>
+
+            <h3>
+                StudentPredict
+            </h3>
+
+            <p>
+                Student Performance Prediction &
+                Academic Risk Analysis System
+            </p>
+
+            <small>
+                Version 1.0
+            </small>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-nav">
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <span>
+                🏠
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="nav-item"
+        >
+
+            <span>
+                🔮
+            </span>
+
+            <small>
+                Predict
+            </small>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="nav-item"
+        >
+
+            <span>
+                📊
+            </span>
+
+            <small>
+                Analytics
+            </small>
+
+        </a>
+
+
+        <a
+            href="profile.html"
+            class="nav-item active"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <small>
+                Profile
+            </small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

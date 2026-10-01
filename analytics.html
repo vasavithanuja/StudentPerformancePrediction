@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>StudentPredict - Analytics</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+
+<div class="dashboard-container">
+
+
+    <!-- HEADER -->
+
+    <header class="dashboard-header">
+
+        <div>
+
+            <p class="small-heading">
+                StudentPredict
+            </p>
+
+            <h1>
+                Analytics
+            </h1>
+
+        </div>
+
+        <div class="profile-icon">
+            📊
+        </div>
+
+    </header>
+
+
+
+    <!-- INTRO -->
+
+    <section class="analytics-intro">
+
+        <div class="analytics-intro-icon">
+            📈
+        </div>
+
+        <div>
+
+            <h2>
+                Performance Analytics
+            </h2>
+
+            <p>
+                Understand your academic performance,
+                study habits and areas for improvement.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- OVERALL PERFORMANCE -->
+
+    <section class="analytics-section">
+
+        <div class="analytics-section-title">
+
+            <span>
+                🎯
+            </span>
+
+            <div>
+
+                <h2>
+                    Overall Performance
+                </h2>
+
+                <p>
+                    Your latest prediction
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="analytics-score-card">
+
+            <div class="analytics-score-circle">
+
+                <strong id="analyticsScore">
+                    --
+                </strong>
+
+                <small>
+                    /100
+                </small>
+
+            </div>
+
+
+            <div class="analytics-score-info">
+
+                <p>
+                    Performance Level
+                </p>
+
+                <h3 id="analyticsPerformance">
+                    --
+                </h3>
+
+
+                <p>
+                    Academic Risk
+                </p>
+
+                <h3 id="analyticsRisk">
+                    --
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACADEMIC FACTORS -->
+
+    <section class="analytics-section">
+
+        <div class="analytics-section-title">
+
+            <span>
+                📚
+            </span>
+
+            <div>
+
+                <h2>
+                    Academic Factors
+                </h2>
+
+                <p>
+                    Your current academic indicators
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CGPA -->
+
+        <div class="analytics-factor">
+
+            <div class="analytics-factor-header">
+
+                <div>
+
+                    <span>
+                        Current CGPA
+                    </span>
+
+                    <small>
+                        Overall academic performance
+                    </small>
+
+                </div>
+
+                <strong id="analyticsCGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="analytics-progress">
+
+                <div
+                    id="analyticsCGPABar"
+                    class="analytics-progress-fill"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SGPA -->
+
+        <div class="analytics-factor">
+
+            <div class="analytics-factor-header">
+
+                <div>
+
+                    <span>
+                        Previous Semester SGPA
+                    </span>
+
+                    <small>
+                        Previous semester performance
+                    </small>
+
+                </div>
+
+                <strong id="analyticsSGPA">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="analytics-progress">
+
+                <div
+                    id="analyticsSGPABar"
+                    class="analytics-progress-fill"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ATTENDANCE -->
+
+        <div class="analytics-factor">
+
+            <div class="analytics-factor-header">
+
+                <div>
+
+                    <span>
+                        Attendance
+                    </span>
+
+                    <small>
+                        Average class attendance
+                    </small>
+
+                </div>
+
+                <strong id="analyticsAttendance">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="analytics-progress">
+
+                <div
+                    id="analyticsAttendanceBar"
+                    class="analytics-progress-fill"
+                ></div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- BACKLOGS -->
+
+        <div class="analytics-backlog">
+
+            <div class="analytics-backlog-icon">
+                📚
+            </div>
+
+            <div>
+
+                <span>
+                    Current Backlogs
+                </span>
+
+                <strong id="analyticsBacklogs">
+                    --
+                </strong>
+
+                <small>
+                    subjects
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- STUDY HABITS -->
+
+    <section class="analytics-section">
+
+        <div class="analytics-section-title">
+
+            <span>
+                📖
+            </span>
+
+            <div>
+
+                <h2>
+                    Study Habits
+                </h2>
+
+                <p>
+                    Your current study routine
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="analytics-habit-grid">
+
+
+            <!-- STUDY HOURS -->
+
+            <div class="analytics-habit-card">
+
+                <span>
+                    ⏰
+                </span>
+
+                <p>
+                    Study Hours
+                </p>
+
+                <strong id="analyticsStudyHours">
+                    --
+                </strong>
+
+                <small>
+                    hours/day
+                </small>
+
+            </div>
+
+
+
+            <!-- STUDY SESSIONS -->
+
+            <div class="analytics-habit-card">
+
+                <span>
+                    📚
+                </span>
+
+                <p>
+                    Study Sessions
+                </p>
+
+                <strong id="analyticsSessions">
+                    --
+                </strong>
+
+                <small>
+                    per week
+                </small>
+
+            </div>
+
+
+
+            <!-- SLEEP -->
+
+            <div class="analytics-habit-card">
+
+                <span>
+                    😴
+                </span>
+
+                <p>
+                    Sleep
+                </p>
+
+                <strong id="analyticsSleep">
+                    --
+                </strong>
+
+                <small>
+                    hours/day
+                </small>
+
+            </div>
+
+
+
+            <!-- CGPA -->
+
+            <div class="analytics-habit-card">
+
+                <span>
+                    🎓
+                </span>
+
+                <p>
+                    Current CGPA
+                </p>
+
+                <strong id="analyticsHabitCGPA">
+                    --
+                </strong>
+
+                <small>
+                    out of 10
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PERFORMANCE INSIGHTS -->
+
+    <section class="analytics-section">
+
+        <div class="analytics-section-title">
+
+            <span>
+                💡
+            </span>
+
+            <div>
+
+                <h2>
+                    Performance Insights
+                </h2>
+
+                <p>
+                    Key observations from your data
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="analyticsInsights"
+            class="analytics-insights"
+        >
+
+            <div class="analytics-insight">
+
+                <span>
+                    📊
+                </span>
+
+                <p>
+                    Complete a prediction to view
+                    your performance insights.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ACTIONS -->
+
+    <section class="analytics-actions">
+
+        <a
+            href="prediction.html"
+            class="analytics-action primary"
+        >
+            🔮 New Prediction
+        </a>
+
+
+        <a
+            href="history.html"
+            class="analytics-action secondary"
+        >
+            🕒 View History
+        </a>
+
+    </section>
+
+
+
+    <!-- BOTTOM NAVIGATION -->
+
+    <nav class="bottom-nav">
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item"
+        >
+
+            <span>
+                🏠
+            </span>
+
+            <small>
+                Home
+            </small>
+
+        </a>
+
+
+        <a
+            href="prediction.html"
+            class="nav-item"
+        >
+
+            <span>
+                🔮
+            </span>
+
+            <small>
+                Predict
+            </small>
+
+        </a>
+
+
+        <a
+            href="analytics.html"
+            class="nav-item active"
+        >
+
+            <span>
+                📊
+            </span>
+
+            <small>
+                Analytics
+            </small>
+
+        </a>
+
+
+        <a
+            href="profile.html"
+            class="nav-item"
+        >
+
+            <span>
+                👤
+            </span>
+
+            <small>
+                Profile
+            </small>
+
+        </a>
+
+    </nav>
+
+</div>
+
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
