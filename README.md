@@ -1,44 +1,69 @@
-# TaskFlow - To-Do List
+# StudentPredict
 
-TaskFlow is a simple and responsive To-Do List web application
-that helps users manage their daily tasks.
+## Student Performance Prediction & Academic Risk Analysis System
+
+StudentPredict is a responsive web application designed to analyze
+student academic performance and study habits and generate a
+performance estimate along with an academic risk level.
 
 ## Features
 
-- User Registration
-- User Login
-- Add Tasks
-- Edit Tasks
-- Delete Tasks
-- Mark Tasks as Completed
-- Dashboard
-- Profile Page
+- Student Registration and Login
+- Student Dashboard
+- Academic Performance Prediction
+- Academic Risk Analysis
+- Performance Result
+- Performance Analytics
+- Prediction History
+- Student Profile
+- Personalized Recommendations
+- Mobile-friendly User Interface
+
+## Input Factors
+
+The system considers:
+
+- Current CGPA
+- Previous Semester SGPA
+- Attendance
+- Number of Backlogs
+- Study Hours per Day
+- Study Sessions per Week
+- Sleep Hours per Day
 
 ## Technologies Used
 
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
+- LocalStorage
+- GitHub Pages
 
-## Live Demo
+## How It Works
 
-https://vasavithanuja.github.io/To-Do-List/
+1. Student creates an account or logs in.
+2. Student enters academic and study-related information.
+3. The system analyzes the entered factors.
+4. A performance score is generated.
+5. The system displays an academic risk level.
+6. Analytics, history and recommendations are provided.
 
 ## Project Structure
 
-- index.html
-- login.html
-- register.html
-- dashboard.html
-- add-task.html
-- edit-task.html
-- profile.html
-- css/style.css
-- js/script.js
-
-## Future Improvements
-
-- Add database integration
-- Add real user authentication
-- Add task reminders
-- Add backend support
+```text
+StudentPerformancePrediction
+│
+├── index.html
+├── register.html
+├── dashboard.html
+├── prediction.html
+├── result.html
+├── analytics.html
+├── history.html
+├── profile.html
+│
+├── css
+│   └── style.css
+│
+└── js
+    └── script.js
